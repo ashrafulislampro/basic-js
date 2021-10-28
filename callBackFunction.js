@@ -14,8 +14,18 @@ function takeShower(){
 function scrollFacebook(){
           console.log("Scroll Facebook But don't any post");
 }
-callBack("Kamal Uddin", 24, washHand);
-callBack("Jamal Uddin", 30, takeShower);
-callBack("Jafor Uddin", 56, scrollFacebook);
+// callBack("Kamal Uddin", 24, washHand);
+// callBack("Jamal Uddin", 30, takeShower);
+// callBack("Jafor Uddin", 56, scrollFacebook);
 
+function welcomeToTheWorld(name, handleCallback){
+          handleCallback(name);
+}
+
+function greetMorning(name){
+          console.log( name,"Good Morning");
+}
+
+const accepter = "Tom the hit";
+welcomeToTheWorld(accepter, greetMorning);
 
